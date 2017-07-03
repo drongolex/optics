@@ -1,0 +1,271 @@
+html, body{
+  font-family: Helvetica;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+
+.header {
+background-color: cadetblue;
+color: white;
+max-width: 960px;
+position: relative;
+top: 1rem;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  flex-grow: 3;
+}
+
+.header img {
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.header p {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.header #navi {
+  padding: 1rem 2rem 1rem 0;
+}
+
+.mobile-nav {
+  display:none;
+}
+
+
+
+.main-banner {
+  background-image: url("./images/glasses-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 31rem;
+  margin-top: 0;
+}
+
+.promo-box{
+  width: 960px;
+  margin:1rem auto;
+  display: flex;
+  justify-content: flex-end;
+
+
+}
+
+#promo {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  background-color: white;
+  color: black;
+  padding: 1.5rem 5rem;
+  margin-top:10rem;
+  margin-right: -2rem;
+}
+
+
+/*Main Content*/
+
+.features {
+  display: flex;
+  justify-content: center;
+
+
+
+}
+
+.feature{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  text-align: center;
+  height: 8rem;
+  margin:3rem;
+}
+
+.feature img {
+  display: block;
+
+}
+
+#ruler img, #truck img {
+  width: 5rem;
+}
+
+#paper img {
+  width: 3.5rem;
+}
+
+
+/*Secondary Section*/
+
+.secondary-section {
+  display:flex;
+  justify-content: center;
+  max-width: 960px;
+  margin: auto;
+}
+
+.containea {
+  width: 35%;
+  margin: 0 2.5%;
+}
+
+.containea span {
+  text-transform: uppercase;
+  color: white;
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  text-align:left;
+  display: block;
+  width: 10rem;
+  margin-bottom: 1rem;
+
+}
+
+/*footer*/
+
+.footer {
+  background-color: azure;
+  margin: 5rem auto 0 auto;
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+
+}
+
+.footer img{
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+
+}
+
+@media only screen and (max-width:1024px){
+
+
+  .header {
+    top:0rem;
+    max-width: 100%;
+  }
+
+  .main-banner {
+    height: 22rem;
+  }
+
+.promo-box{
+  width: 100%;
+}
+ #promo {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-top:5rem;
+    margin-right: 2rem;
+
+  }
+}
+
+
+@media only screen and (max-width:640px){
+
+nav {
+display: none;
+
+}
+
+.mobile-nav {
+  display: inline-block;
+  padding:1rem 2rem;
+}
+
+.logo p{
+  display: none;
+}
+
+.main-banner {
+  height: 17rem;
+  background-position: 20%;
+}
+
+.promo-box{
+  justify-content: center;
+  margin:auto;
+}
+
+  #promo {
+     font-size: 1rem;
+     padding:1rem auto;
+     margin-top:9rem;
+     width: 100%;
+     margin-right: 0;
+     text-align: center;
+   }
+
+   .features {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 3.77rem auto;
+
+   }
+
+   .feature{
+     margin:1.54rem auto;
+     font-size: 0.77rem;
+     height: auto;
+   }
+
+   .feature img {
+     padding-bottom: 2rem;
+   }
+
+.secondary-section {
+     display:block;
+     max-width: auto;
+}
+
+.containea {
+  width: 100%;
+  margin: auto;
+  font-size: 0.77rem;
+}
+
+.containea span {
+  text-align:center;
+  margin-bottom: 1rem;
+  width: auto;
+}
+
+.containea p{
+  padding: 0 1rem;
+}
+
+.footer span{
+  display: none;
+}
+
+.footer{
+  justify-content: center;
+}
+
+.footer img{
+  padding: 4rem 0;
+
+}
+
+}
